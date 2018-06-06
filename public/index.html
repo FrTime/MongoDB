@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Import Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Import local materialize.css -->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <!-- Import local style.css -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+
+    <!-- Let browser know website is optimized for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-wrapper blue">
+            <!-- <div class="left brand-logo">
+                Mongo Scraper
+            </div> -->
+            <ul id="nav-mobile" class="brand-logo center">
+                <li>
+                    <a id="homeButton" href="#">Home</a>
+                </li>
+                <li>
+                    <a id="savedArticlesButton" href="#">My Saved Articles</a>
+                </li>
+                <li id="scrapeButton" class="red lighten-1 z-depth-3 hide-on-med-and-down">
+                    <a class="pulse" href="#">Get New Articles</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="logo-cont z-depth-0">
+        <div class="nyt-logo center">
+            New York Times Article Scraper
+        </div>
+    </div>
+
+    <br>
+
+    <div class="container" id="articlesTable">
+        <h5>Scraped Articles:</h5>
+        <h6 id="noArticles">There are currently no articles.</h6>
+
+        <ul class="collapsible popout">
+            <li>
+                <div class="collapsible-header blue white-text">
+                    ARTICLE TITLE HERE</div>
+                <div class="collapsible-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quas eos nihil? Odio eum tempore rem possimus
+                        totam sequi voluptatem vitae, suscipit maiores quia officiis facilis rerum voluptatum, asperiores
+                        nobis.
+                    </p>
+                    <div class="container center">
+                        <a class="waves-effect waves-light btn red lighten-1 saveArticle">
+                            <i class="material-icons left">bookmark</i>Save Article</a>
+                    </div>
+                    <hr>
+                    <div class="center url-text">
+                        Article URL goes here
+                    </div>
+                </div>
+            </li>
+            <br>
+        </ul>
+
+    </div>
+
+
+    <!-- JavaScript at end of body for optimized loading -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
+    <!-- Import local materialize.js and app.js -->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>
